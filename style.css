@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    width: 98%;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    object-fit: cover;
+    background: linear-gradient(to left , #5df4cc, #5db8c4, #5e5cc8);
+    background-size: 200%;
+    animation: bg-animation 10s infinite alternate;
+    
+}
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+.quiz-section{
+    margin-top: 7%;
+    width: 70%;
+    height: 700px;
+    /*border: 5px solid rgb(253, 251, 251);
+    border-radius: 50px;*/
+    
+}
+.quiz-section h1 {
+    font-family: monospace;
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    color: aliceblue;
+    border-bottom:  aliceblue 5px double;
+}
+
+#quiz {
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    border: 5px solid rgb(253, 251, 251);
+    border-radius: 50px;
+    background: linear-gradient(to left ,  #46ebbf, #409eab, #403eb6);
+    background-size: 200%;
+    animation: bg-animation 10s infinite alternate;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+#question {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+.quiz-section ul{
+    width:30%;
+    height:30vh;    
+    
+}
+.quiz-section ul li{
+    padding:25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    border-radius: 20px;
+    text-align: left;
+}
+.answer {
+    cursor: pointer; 
+}
+
+ul li  {
+    background-color: transparent;
+}
+ul li:hover {
+    background-color: #414ec7;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: aliceblue;
+    border: 2px solid #414143;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    background-color: transparent;
+}
+#submit:hover {
+    background-color: azure;
+    border: 2px solid #9e9ee3;
+}
+.reload-button {
+    margin-top: 100px;
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #414143;
+    border-radius: 30px;
+
+}
+
+.reload-button:hover{
+    background-color: azure;
+    border: 2px solid #9e9ee3;
+}
