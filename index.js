@@ -1,7 +1,18 @@
- // Define quiz data
+// Define quiz data
 const quizData = [
     {
-        question: "1: What does HTML stand for?",
+        question: "1:The full form of CSS is?",
+        options: [
+            "Cascading Style Sheet",
+            "Coloured Special Sheets",
+            "Color and Style Sheets",
+            "None of the above",
+        ],
+        correct: 0,
+       
+    },
+    {
+        question: "2: What does HTML stand for?",
         options: [
             "Hypertext Markup Language",
             "Hyper Transfer Markup Language",
@@ -9,16 +20,7 @@ const quizData = [
             "Hyperlink and text markup language",
         ],
         correct: 0,
-    },
-    {
-        question: "2: Which CSS property is used to control spacing between elements?",
-        options: [
-            "Margin",
-            "Padding",
-            "Spacing",
-            "Border-Spacing",
-        ],
-        correct: 1,
+        
     },
     {
         question: "3: What is the JavaScript function used to select an HTML element by its id?",
@@ -41,14 +43,14 @@ const quizData = [
         correct: 0,
     },
     {
-        question: "5: Which HTML tag is used to create an ordered list?",
+        question: "5: Which HTML tag is used to declalre internal CSS?",
         options: [
-            "<ul>",
-            "<li>",
-            "<ol>",
-            "<dl>",
+            "<style>",
+            "<link>",
+            "<script>",
+            "<p>",
         ],
-        correct: 2,
+        correct: 0,
     }
 ];
 
@@ -74,13 +76,7 @@ loadQuiz();
 
 // get selected Answer Function on Button Click
 const getSelectedOption = () => {
-    // let ans_index;
-    // answerElms.forEach((curOption, index) => {
-    //     if (curOption.checked) {
-    //         ans_index = index;
-    //     }
-    // });
-    // return ans_index;
+   
     let answerElement = Array.from(answerElms)
     return answerElement.findIndex((curElem)=> curElem.checked);
 };
